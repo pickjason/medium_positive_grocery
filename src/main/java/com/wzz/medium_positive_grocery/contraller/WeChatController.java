@@ -21,4 +21,11 @@ public class WeChatController {
         return echostr;
     }
 
+
+
+    @GetMapping("/wx/button")
+    public String button(){
+        return "ok";
+    }
+
 }
