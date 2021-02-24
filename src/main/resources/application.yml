@@ -1,3 +1,9 @@
 server:
   port: 9703
 
+spring:
+  cache:
+    cache-names: ACCESS_TOKEN
+    type: caffeine
+    caffeine:
+      spec: maximumSize =100,expireAfterWrite=7200s
